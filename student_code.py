@@ -12,7 +12,10 @@ def sum_of_squares(n: int):
     Raises:
     ValueError: If n is a negative integer.
     """
-    pass
+    if n <0:
+        raise ValueError("int cannot be a negative number")
+    else:
+        return sum(n)
 
 def evaluate_performance(grades: list, min_pass: int):
     """
